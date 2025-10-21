@@ -1,0 +1,10 @@
+Discussion : 
+1.  module.exports = fonction
+ Le module exporte une seule chose (une fonction, une classe, une variable…).
+    module.exports = { ... }
+ Le module exporte un objet avec plusieurs éléments (plusieurs fonctions, variables, etc.).
+
+2. je préfère utiliser module.exports = fonction quand le module ne fait qu’une seule chose précise, comme une seule fonction ou une seule classe à exporter (ex : saluer()).
+C’est plus simple et plus clair à utiliser.
+En revanche, j'utilise module.exports = { ... } lorsque je veut exporter plusieurs fonctions, variables ou objets dans un même module (ex : saluer() et direAuRevoir()).
+Cela permet de regrouper plusieurs utilitaires liés dans un seul fichier.

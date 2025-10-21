@@ -1,0 +1,11 @@
+Discussion :
+1. Que se passe-t-il si plusieurs fichiers définissent les mêmes noms ?
+Les variables/fonctions entrent en conflit, l’une écrase l’autre ou cause une erreur.
+Le code devient imprévisible ou plante.
+
+2. Pourquoi est-ce un problème dans un projet réel ?
+Parce que dans un grand projet, tu as beaucoup de fichiers.
+Si chaque fichier déclare des variables globales sans séparation, elles peuvent : s’écraser les unes les autres, créer des bugs difficiles à comprendre, rendre le code impossible à maintenir
+
+3. Comment le système de modules de Node résout ce problème ?
+Chaque fichier Node.js est un module indépendant, les variables et fonctions qu’il contient ne sont pas visibles à l’extérieur, sauf si tu les exportes explicitement avec module.exports.
