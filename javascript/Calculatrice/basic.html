@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <script src="calculatrice.js"></script>
+  <title>Mini Projet - Calculatrice</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 30px;
+      background: #f4f4f4;
+    }
+
+    .calculator {
+      background: #222;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      width: 280px;
+    }
+
+    .display {
+      background: #000;
+      color: #0f0;
+      font-size: 2rem;
+      text-align: right;
+      padding: 15px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      overflow-x: auto;
+    }
+
+    .keys {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+    }
+
+    .keys button {
+      padding: 20px;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      background: #444;
+      color: #fff;
+      transition: background 0.2s;
+    }
+
+    .keys button:hover {
+      background: #666;
+    }
+
+    .keys button[data-type="op"],
+    .keys button[data-type="eq"] {
+      background: #f57c00;
+    }
+
+    .keys button[data-type="op"]:hover,
+    .keys button[data-type="eq"]:hover {
+      background: #ff9800;
+    }
+
+    #history {
+      margin-top: 15px;
+      padding: 0;
+      list-style: none;
+      background: #fff;
+      border-radius: 5px;
+      max-height: 120px;
+      overflow-y: auto;
+    }
+
+    #history li {
+      padding: 5px 10px;
+      border-bottom: 1px solid #ddd;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrapper">
+    <div class="calculator">
+      <div class="display" id="display">0</div>
+      <div class="keys" id="keys">
+        <button data-type="digit" data-value="7">7</button>
+        <button data-type="digit" data-value="8">8</button>
+        <button data-type="digit" data-value="9">9</button>
+        <button data-type="op" data-value="÷">÷</button>
+
+        <button data-type="digit" data-value="4">4</button>
+        <button data-type="digit" data-value="5">5</button>
+        <button data-type="digit" data-value="6">6</button>
+        <button data-type="op" data-value="×">×</button>
+
+        <button data-type="digit" data-value="1">1</button>
+        <button data-type="digit" data-value="2">2</button>
+        <button data-type="digit" data-value="3">3</button>
+        <button data-type="op" data-value="-">−</button>
+
+        <button data-type="digit" data-value="0">0</button>
+        <button data-type="decimal">.</button>
+        <button data-type="eq">=</button>
+        <button data-type="op" data-value="+">+</button>
+
+        <button data-type="cmd" data-value="AC">AC</button>
+        <button data-type="cmd" data-value="CE">CE</button>
+        <button data-type="cmd" data-value="neg">±</button>
+        <button data-type="cmd" data-value="pct">%</button>
+      </div>
+    </div>
+    <ul id="history"></ul>
+  </div>
+</body>
+</html>
