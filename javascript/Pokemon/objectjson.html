@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Présence</title>
+</head>
+<body>
+  <h2>Formulaire de présence</h2>
+  
+  <label>Nom : </label>
+  <input type="text" id="nom"><br><br>
+  
+  <label>Prénom : </label>
+  <input type="text" id="prenom"><br><br>
+  
+  <label>Présent(e) ? </label>
+  <select id="presence">
+    <option value="Oui">Oui</option>
+    <option value="Non">Non</option>
+  </select><br><br>
+  
+  <button onclick="enregistrer()">Enregistrer</button>
+  
+  <h3>Résultat :</h3>
+  <p id="resultat"></p>
+  
+  <script>
+    function enregistrer() {
+      let nom = document.getElementById("nom").value;
+      let prenom = document.getElementById("prenom").value;
+      let presence = document.getElementById("presence").value;
+      
+      // Affichage du résultat
+      document.getElementById("resultat").innerText = 
+        "Nom : " + nom + "\nPrénom : " + prenom + "\nPrésence : " + presence;
+    }
+  </script>
+</body>
+</html>
