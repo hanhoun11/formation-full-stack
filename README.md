@@ -1,1 +1,0 @@
-# formation-full-stack javascript
