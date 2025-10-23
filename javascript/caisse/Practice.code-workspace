@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../Bureau/Practice"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "caisse"
+	}
+}
