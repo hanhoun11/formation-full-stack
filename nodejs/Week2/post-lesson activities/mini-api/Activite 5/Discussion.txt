@@ -1,0 +1,8 @@
+Discussion:
+1. Comment éviter le blocage du thread lors de la lecture de fichier ?
+On utilise fs.promises.readFile ou fs.readFile avec callback, qui sont asynchrones.
+À éviter : fs.readFileSync, qui bloque tout le serveur jusqu’à la fin de la lecture.
+
+2. Quelle est la différence entre readFileSync et fs.promises.readFile ? 
+readFileSync: Synchrone, Bloque le thread → aucune requête ne peut être traitée pendant la lecture
+fs.promises.readFile: Asynchrone (Promise), Non bloquant → serveur peut traiter d’autres requêtes simultanément

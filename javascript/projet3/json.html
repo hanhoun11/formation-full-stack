@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Présence JSON</title>
+</head>
+<body>
+  <h2>Formulaire de présence</h2>
+  
+  <label>Nom : </label>
+  <input type="text" id="nom"><br><br>
+  
+  <label>Prénom : </label>
+  <input type="text" id="prenom"><br><br>
+  
+  <label>Présent(e) ? </label>
+  <select id="presence">
+    <option value="Oui">Oui</option>
+    <option value="Non">Non</option>
+  </select><br><br>
+  
+  <button onclick="enregistrer()">Enregistrer</button>
+  
+  <h3>Résultat en JSON :</h3>
+  <pre id="resultat"></pre>
+  
+  <script>
+    function enregistrer() {
+      let nom = document.getElementById("nom").value;
+      let prenom = document.getElementById("prenom").value;
+      let presence = document.getElementById("presence").value;
+      
+      // Création de l'objet
+      let personne = {
+        nom: nom,
+        prenom: prenom,
+        presence: presence
+      };
+      
+      // Conversion en JSON
+      let json = JSON.stringify(personne, null, 2);
+      
+      // Affichage
+      document.getElementById("resultat").textContent = json;
+    }
+  </script>
+</body>
+</html>

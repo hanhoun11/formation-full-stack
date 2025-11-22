@@ -1,0 +1,7 @@
+[
+    { "id": 1, "name": "Hammer", "category": "tools", "price": 25 },
+    { "id": 2, "name": "Screwdriver", "category": "tools", "price": 15 },
+    { "id": 3, "name": "Laptop", "category": "electronics", "price": 800 },
+    { "id": 4, "name": "Wrench", "category": "tools", "price": 50 },
+    { "id": 5, "name": "Headphones", "category": "electronics", "price": 100 }
+]

@@ -1,0 +1,33 @@
+Discution:
+1.
+Séparation des responsabilités:
+Chaque couche a une seule tâche on a par exemple Routes : définir les endpoints et lier les middlewares.
+Controllers : orchestrer la logique pour une requête (recevoir req, appeler services, retourner réponse).
+Services : logique métier et accès aux données (lecture/filtres, appels DB, validations complexes).
+Middlewares : tâches transverses (auth, logging, validation, rate-limit).
+et bien sur tout ca pour avoir un code lisible
+Tu peux tester les services indépendamment des routes.
+Moins de dépendances rend les tests plus simples et rapides.
+Un service peut être appelé par plusieurs controllers (API, CLI, tâches cron) sans dupliquer le code.
+Les middlewares réutilisables (auth, logger) peuvent être appliqués là où nécessaire.
+
+2. Classement par fréquence probable (du plus souvent modifié au moins souvent) :
+Routes (src/routes/*.js)
+Ajout/suppression d’endpoints, changement d’URL, versioning (/api/v1/...)
+Souvent modifié quand l’API expose de nouvelles fonctionnalités.
+Controllers (src/controllers/*.js)
+Quand le comportement exposé change (statut de réponse, composition des données renvoyées, règles simples d’agrégation).
+Les contrôleurs orchestrent souvent des changements mineurs sans toucher la logique métier.
+Services (src/services/*.js) / Data layer
+Si la logique métier évolue (nouvelle règle), si on change la source de données (fichier → base de données) ou si on ajoute des filtres/tri/pagination.
+Validators / Schemas (src/validators ou src/schemas)
+Quand les champs obligatoires changent, nouvelles règles de validation, nouveaux formats d’entrée.
+Middlewares (src/middleware/*) — auth, rate-limit, logger
+Évoluent si on modifie l’authentification, la politique de logging, ou qu’on ajoute des protections.
+Config (config/ ou .env)
+Variables d’environnement (URL DB, clés), paramètres de feature flags, limites de pagination.
+Changements fréquents en dev/déploiement, moins dans le code métier.
+Models / Migrations (si DB)
+Si tu changes le schéma de données (ajout d’un champ, refactor relation), ces fichiers évoluent. Moins fréquent mais impact important.
+Tests (tests/*)
+À mettre à jour chaque fois que le comportement change. S’ils sont bien écrits, ils te guideront pour modifier les autres fichiers.

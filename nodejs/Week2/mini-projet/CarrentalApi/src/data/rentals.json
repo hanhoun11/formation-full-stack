@@ -1,0 +1,49 @@
+[
+  {
+    "id": "9df6fe65-434a-459f-bcba-551228868123",
+    "carId": "1",
+    "customer": {
+      "name": "Alice",
+      "email": "alice@example.com"
+    },
+    "from": "2025-11-02",
+    "to": "2025-11-05",
+    "days": 3,
+    "dailyRate": 42.5,
+    "total": 127.5,
+    "status": "active",
+    "createdAt": "2025-11-07T00:07:09.473Z"
+  },
+  {
+    "id": "b04d488f-e971-46d6-8290-3c811aeee4fd",
+    "carId": "2",
+    "customer": {
+      "name": "salma",
+      "email": "salma@egmail.com"
+    },
+    "from": "2025-11-07",
+    "to": "2025-11-12",
+    "days": 5,
+    "dailyRate": 25,
+    "total": 125,
+    "status": "cancelled",
+    "createdAt": "2025-11-07T00:18:21.789Z",
+    "cancelledAt": "2025-11-07T00:56:40.052Z"
+  },
+  {
+    "id": "136a914c-1c4b-4ffc-8c1b-9360e0f9ba51",
+    "carId": "3",
+    "customer": {
+      "name": "salma",
+      "email": "salma@egmail.com"
+    },
+    "from": "2025-11-07",
+    "to": "2025-11-12",
+    "days": 5,
+    "dailyRate": 60,
+    "total": 300,
+    "status": "returned",
+    "createdAt": "2025-11-07T00:43:57.415Z",
+    "returnedAt": "2025-11-07T00:50:53.813Z"
+  }
+]

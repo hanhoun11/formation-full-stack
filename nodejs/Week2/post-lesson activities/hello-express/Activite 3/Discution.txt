@@ -1,0 +1,13 @@
+1. next() est une fonction fournie par Express, utiliser dans un middleware express pour indiquer a l'application de passer au middleware ou à la route suivante dans la chaine de traitement. 
+2. Différence entre middleware global et middleware spécifique à une route:
+Middleware global : S’applique à toutes les routes.
+Ce middleware sera exécuté pour chaque requête
+Middleware spécifique à une route: Ne s’applique qu’à une route précise
+3. Pourquoi les middlewares sont essentiels dans Express ?
+Parce qu’ils sont la base du fonctionnement d’Express
+Ils permettent de :
+ Exécuter du code avant d’envoyer la réponse,
+ Modifier la requête (req) ou la réponse (res),
+ Gérer l’authentification, la sécurité, les logs,
+ Intercepter les erreurs,
+ Réutiliser du code proprement.

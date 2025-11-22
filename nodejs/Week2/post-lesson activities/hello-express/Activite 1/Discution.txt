@@ -1,0 +1,14 @@
+1. La difference entre Node.js natif et Express :
+
+Node.js native : tu dois tout faire toi meme, analyser l'URL; gérer les routes, les méthodes HTTP..., il faut importer le module http et utiliser http.createServer,
+le code devient long et difficile a lire.
+
+Node.js avec Express : Express automatise tout ca, il suffit de definir ls routes et Express s'occupe du reste, Il suffit d’importer Express (const express = require('express')) et de faire app.listen(), Express rend le code plus court, plus clair et plus structuré,Express te donne déjà req.params, req.body, req.query tout prêts.
+
+2. Express gère automatiquement : 
+Le routage.
+Les en-têtes HTTP et le format de réponse.
+Le parsing des données.
+Les Middlewares.
+ 
+

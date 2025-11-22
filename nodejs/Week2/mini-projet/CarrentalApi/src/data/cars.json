@@ -1,0 +1,239 @@
+[
+  {
+    "id": "1",
+    "brand": "Toyota",
+    "model": "Corolla",
+    "category": "sedan",
+    "plate": "ABC-123",
+    "pricePerDay": 42.5,
+    "available": false
+  },
+  {
+    "id": "2",
+    "brand": "Dacia",
+    "model": "Logan",
+    "category": "eco",
+    "plate": "DK-001",
+    "pricePerDay": 25,
+    "available": true
+  },
+  {
+    "id": "3",
+    "brand": "Ford",
+    "model": "Explorer",
+    "category": "suv",
+    "plate": "SUV-777",
+    "pricePerDay": 60,
+    "available": true
+  },
+  {
+    "id": "4",
+    "brand": "Renault",
+    "model": "Trafic",
+    "category": "van",
+    "plate": "VAN-12",
+    "pricePerDay": 80,
+    "available": true
+  },
+  {
+    "id": "5",
+    "brand": "Hyundai",
+    "model": "Elantra",
+    "category": "sedan",
+    "plate": "EL-555",
+    "pricePerDay": 38,
+    "available": true
+  },
+  {
+    "id": "b1c28523-c0e9-41da-a189-873f61b1a819",
+    "brand": "Toyota",
+    "model": "Corolla",
+    "category": "sedan",
+    "plate": "DEF-456",
+    "pricePerDay": 42.5,
+    "available": true
+  },
+  
+  {
+    "id": "6",
+    "brand": "Toyota",
+    "model": "Corolla",
+    "category": "sedan",
+    "plate": "ABC-123",
+    "pricePerDay": 42.5,
+    "available": false
+  },
+  {
+    "id": "7",
+    "brand": "Dacia",
+    "model": "Logan",
+    "category": "eco",
+    "plate": "DAC-001",
+    "pricePerDay": 25,
+    "available": true
+  },
+  {
+    "id": "8",
+    "brand": "Ford",
+    "model": "Focus",
+    "category": "sedan",
+    "plate": "FRD-342",
+    "pricePerDay": 45,
+    "available": true
+  },
+  {
+    "id": "9",
+    "brand": "BMW",
+    "model": "X5",
+    "category": "suv",
+    "plate": "BMW-555",
+    "pricePerDay": 95,
+    "available": true
+  },
+  {
+    "id": "10",
+    "brand": "Hyundai",
+    "model": "Elantra",
+    "category": "sedan",
+    "plate": "HYN-234",
+    "pricePerDay": 39,
+    "available": true
+  },
+  {
+    "id": "11",
+    "brand": "Renault",
+    "model": "Clio",
+    "category": "eco",
+    "plate": "RNL-111",
+    "pricePerDay": 28,
+    "available": true
+  },
+  {
+    "id": "12",
+    "brand": "Mercedes",
+    "model": "C-Class",
+    "category": "sedan",
+    "plate": "MRC-900",
+    "pricePerDay": 85,
+    "available": true
+  },
+  {
+    "id": "13",
+    "brand": "Audi",
+    "model": "A4",
+    "category": "sedan",
+    "plate": "AUD-444",
+    "pricePerDay": 80,
+    "available": true
+  },
+  {
+    "id": "14",
+    "brand": "Kia",
+    "model": "Rio",
+    "category": "eco",
+    "plate": "KIA-321",
+    "pricePerDay": 30,
+    "available": true
+  },
+  {
+    "id": "15",
+    "brand": "Jeep",
+    "model": "Compass",
+    "category": "suv",
+    "plate": "JEP-500",
+    "pricePerDay": 70,
+    "available": true
+  },
+  {
+    "id": "16",
+    "brand": "Volkswagen",
+    "model": "Golf",
+    "category": "sedan",
+    "plate": "VW-888",
+    "pricePerDay": 55,
+    "available": true
+  },
+  {
+    "id": "17",
+    "brand": "Nissan",
+    "model": "Qashqai",
+    "category": "suv",
+    "plate": "NSN-777",
+    "pricePerDay": 68,
+    "available": true
+  },
+  {
+    "id": "18",
+    "brand": "Fiat",
+    "model": "Panda",
+    "category": "eco",
+    "plate": "FIA-222",
+    "pricePerDay": 26,
+    "available": true
+  },
+  {
+    "id": "19",
+    "brand": "Peugeot",
+    "model": "308",
+    "category": "sedan",
+    "plate": "PEU-308",
+    "pricePerDay": 48,
+    "available": true
+  },
+  {
+    "id": "20",
+    "brand": "Citroen",
+    "model": "C3",
+    "category": "eco",
+    "plate": "CTR-333",
+    "pricePerDay": 29,
+    "available": true
+  },
+  {
+    "id": "21",
+    "brand": "Opel",
+    "model": "Astra",
+    "category": "sedan",
+    "plate": "OPL-111",
+    "pricePerDay": 46,
+    "available": true
+  },
+  {
+    "id": "22",
+    "brand": "Mazda",
+    "model": "CX-5",
+    "category": "suv",
+    "plate": "MZD-555",
+    "pricePerDay": 75,
+    "available": true
+  },
+  {
+    "id": "23",
+    "brand": "Renault",
+    "model": "Trafic",
+    "category": "van",
+    "plate": "VAN-12",
+    "pricePerDay": 80,
+    "available": true
+  },
+  {
+    "id": "24",
+    "brand": "Toyota",
+    "model": "RAV4",
+    "category": "suv",
+    "plate": "TOY-777",
+    "pricePerDay": 72,
+    "available": true
+  },
+  {
+    "id": "25",
+    "brand": "Ford",
+    "model": "Transit",
+    "category": "van",
+    "plate": "TRN-900",
+    "pricePerDay": 85,
+    "available": true
+  }
+
+
+]

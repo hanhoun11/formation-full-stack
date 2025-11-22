@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Pokédex</title>
+
+</head>
+<body>
+
+<div class="container">
+  <!-- Barre de recherche -->
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Rechercher un Pokémon...">
+    <button id="searchBtn">Rechercher</button>
+    <button id="randomBtn">Surprise !</button>
+    <button id="cancelBtn">Annuler</button>
+  </div>
+
+  <!-- Conteneur principal : résultats à gauche, historique à droite -->
+  <div class="main-content">
+    <div class="results-container" id="results">
+      <!-- Cartes Pokémon -->
+    </div>
+    <div class="history-container">
+      <ul id="historyList">
+        <!-- Historique -->
+      </ul>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

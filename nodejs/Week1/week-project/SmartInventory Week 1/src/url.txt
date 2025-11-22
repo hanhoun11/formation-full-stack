@@ -1,0 +1,12 @@
+Produits : 
+http://localhost:3000/api/products?category=tools&minPrice=10&maxPrice=100&page=2&limit=5
+http://localhost:3000/api/products/sku/SKU-001
+http://localhost:3000/api/products/123
+
+-> Commandes
+
+http://localhost:3000/api/orders?status=paid&from=2024-01-01&to=2024-12-31&limit=20
+http://localhost:3000/api/orders/number/ORD-2025-0007
+
+-> Santé
+http://localhost:3000/health
