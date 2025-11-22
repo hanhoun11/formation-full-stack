@@ -1,0 +1,10 @@
+Discutions :
+1. Qu’est-ce qu’un endpoint REST bien conçu ?
+C’est une adresse (URL) qui représente une ressource, avec un verbe HTTP clair :
+Get pour lire, Post our crée, Put pour modifier et Delete pour Supprimer 
+
+2. Pourquoi l’idempotence est importante ?
+Une opération est idempotente si refaire la même requête ne change pas le résultat.
+Par exemple :
+Supprimer deux fois la même ressource (DELETE) → le résultat reste le même (elle est supprimée).
+Modifier (PUT) plusieurs fois avec les mêmes données → même résultat.

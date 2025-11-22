@@ -1,0 +1,4 @@
+[
+  { "id": "p1", "name": "Laptop 14 pouces", "sku": "LAP-14-001", "price": 1200, "category": "electronics", "inStock": true, "createdAt": "2025-01-01T10:00:00.000Z", "updatedAt": "2025-01-01T10:00:00.000Z" },
+  { "id": "p2", "name": "Souris sans fil", "sku": "MOU-001", "price": 25, "category": "accessories", "inStock": true, "createdAt": "2025-01-02T10:00:00.000Z", "updatedAt": "2025-01-02T10:00:00.000Z" }
+]

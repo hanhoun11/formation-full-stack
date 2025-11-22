@@ -1,0 +1,29 @@
+[
+  {
+    "id": "1730542200002",
+    "title": "Faire les exercices Express",
+    "completed": true,
+    "priority": "medium",
+    "dueDate": "2025-11-03",
+    "createdAt": "2025-10-30T18:00:00Z",
+    "updatedAt": "2025-11-01T12:00:00Z"
+  },
+  {
+    "id": "1730542200003",
+    "title": "Préparer présentation mini projet",
+    "completed": false,
+    "priority": "low",
+    "dueDate": "2025-11-07",
+    "createdAt": "2025-11-01T09:00:00Z",
+    "updatedAt": "2025-11-01T09:00:00Z"
+  },
+  {
+    "id": "1762180689908",
+    "title": "Réviser NEST.js",
+    "completed": false,
+    "priority": "high",
+    "dueDate": "2025-11-05",
+    "createdAt": "2025-11-03T14:38:09.908Z",
+    "updatedAt": "2025-11-03T14:38:09.908Z"
+  }
+]

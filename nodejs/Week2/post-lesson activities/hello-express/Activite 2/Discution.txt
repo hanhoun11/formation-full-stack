@@ -1,0 +1,12 @@
+1. Qu'apporte le format JSON : 
+JSON abréviation de JavaScript Object Notation est un format léger pour l'echange des données entre un serveur et un client, lisible et simple, facile a lire, standardisé c'est a dire tout les langage de programmation peuvent le comprendre, structuré, interoperable. 
+
+ 2. Chaque resource a sa propre route : 
+Dans une API REST, chaque ressourcea sa propre URL pour :Identifier clairement la ressource : /api/products/1 permet d’accéder uniquement au produit avec l’ID 1.
+Organiser l’API : Les routes sont logiques et prévisibles.
+Permettre les opérations CRUD :
+GET /api/products → liste tous les produits
+GET /api/products/1 → récupère un produit spécifique
+POST /api/products → crée un produit
+PUT /api/products/1 → met à jour un produit
+DELETE /api/products/1 → supprime un produit

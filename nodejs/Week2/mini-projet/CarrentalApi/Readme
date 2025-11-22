@@ -1,0 +1,123 @@
+# Car Rental API
+
+API REST simple pour gérer la location de voitures avec **Node.js** et **Express**, en utilisant des fichiers JSON comme stockage.
+
+---
+
+## **Technologies utilisées**
+- Node.js (v22+)
+- Express
+- UUID (`uuid`) pour les identifiants uniques
+- JSON file-based storage (`cars.json` et `rentals.json`)
+- Thunder Client  pour tester l’API
+
+---
+
+## **Installation**
+
+
+npm install express morgan dotenv.
+
+
+
+npm install --save-dev nodemon
+Lancer le serveur :
+
+
+npm run dev   
+
+L’API écoute sur http://localhost:3000
+
+Endpoints API
+Cars
+-----
+Méthode	    URL	                  Description
+GET	      /api/cars	          Lister toutes les voitures
+GET	      /api/cars/:id	      Récupérer une voiture par ID
+POST	  /api/cars	          Créer une voiture
+PUT	      /api/cars/:id	      Mettre à jour une voiture
+DELETE	  /api/cars/:id 	  Supprimer (soft-delete) voiture
+
+Rentals
+-------
+Méthode	     URL	                            Description
+GET	      /api/rentals	                  Lister toutes les locations (avec filtres)
+GET	      /api/rentals/:id	              Récupérer une location par ID
+POST	  /api/rentals	                  Créer une location (check disponibilité)
+PUT	      /api/rentals/:id/return	      Retourner une voiture (status = returned)
+DELETE	  /api/rentals/:id	              Annuler une location (status = cancelled)
+
+Notes:
+
+La création de rental marque la voiture comme disponible = false
+
+Retourner ou annuler la location remet la voiture disponible = true
+
+Exemple de requêtes avec Thunder Client
+Créer une voiture
+json
+Copy code
+POST /api/cars
+Content-Type: application/json
+
+{
+  "brand": "Toyota",
+  "model": "Corolla",
+  "category": "sedan",
+  "plate": "ABC-123",
+  "pricePerDay": 42.5
+}
+Créer une location
+json
+Copy code
+POST /api/rentals
+Content-Type: application/json
+
+{
+  "carId": "1",
+  "customer": {"name":"Alice","email":"alice@example.com"},
+  "from": "2025-11-02",
+  "to": "2025-11-05"
+}
+Retourner une location
+json
+Copy code
+PUT /api/rentals/<RENTAL_ID>/return
+Annuler une location
+json
+Copy code
+DELETE /api/rentals/<RENTAL_ID>
+Validation
+carId doit exister et la voiture doit être disponible
+
+plate doit être unique pour les voitures
+
+from < to pour les dates de location
+
+Une voiture ne peut pas être réservée pour les mêmes dates
+
+3️⃣ Ajouter des query params pour tester
+Exemple de filtre, tri et pagination :
+http://localhost:3000/api/cars?page=1&limit=3&sort=pricePerDay&order=asc&category=sedan
+
+
+Explications :
+
+page=1 → première page
+
+limit=3 → maximum 3 voitures retournées
+
+sort=pricePerDay → trier par prix journalier
+
+order=asc → ordre croissant
+
+category=sedan → filtrer uniquement les voitures de catégorie sedan
+
+GET /api/cars?limit=5&page=2
+
+GET /api/cars?category=suv&sort=pricePerDay&order=desc
+
+GET /api/cars?category=eco&limit=3&page=1
+
+GET /api/cars?q=Toyota
+

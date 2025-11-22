@@ -1,0 +1,7 @@
+Discution : 
+1. Pourquoi le middleware d’erreur doit être en dernier?
+Dans Express, les routes et middlewares sont exécutés dans l’ordre où tu les écris.
+Donc si tu veux qu’un middleware attrape toutes les erreurs, il faut le mettre à la fin.
+2. Différence entre throw new Error() et next(err):
+throw new Error('msg'): lève une erreur directement (comme dans n’importe quel code JS)
+next(err): envoie l’erreur à Express pour qu’il la gère

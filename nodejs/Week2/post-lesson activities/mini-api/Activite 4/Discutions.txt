@@ -1,0 +1,8 @@
+Discutions: 
+Pourquoi séparer la logique d’erreur du code métier ?
+Le code métier reste propre et lisible, sans gestion d’erreurs dispersée.
+Les erreurs sont centralisées, ce qui facilite la maintenance et le debug.
+
+Qu’apporte la cohérence des messages d’erreur côté client ?
+Le front-end peut prévoir et traiter correctement toutes les erreurs.
+L’API devient prévisible et professionnelle, ce qui améliore l’expérience développeur et utilisateur.

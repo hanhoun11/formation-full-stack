@@ -1,0 +1,19 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "description": "Hadi API sghira b **Express.js** katmknk tdir **CRUD** (Create, Read, Update, Delete) 3la liste dyal tâches (`todos`)  \r Sans base de données, ghadi nst3mlo fichier `data/todos.json` bach nkhzno fih les données.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "morgan": "^1.10.1",
+    "nodemon": "^3.1.10"
+  }
+}

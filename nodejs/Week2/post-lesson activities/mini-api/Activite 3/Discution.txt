@@ -1,0 +1,8 @@
+Discution:
+1. Quelle est la différence entre un middleware global et local ?
+Global: S’applique à toutes les routes de ton application.
+Local: S’applique seulement à certaines routes.
+
+
+2. Pourquoi la réutilisabilité est-elle une force des middlewares ?
+Parce qu’un middleware est comme une petite brique indépendante, tu peux la réutiliser dans plusieurs projets, tu peux les combiner facilement (auth + vérif horaire + logger...),tu gardes un code propre et organisé. 

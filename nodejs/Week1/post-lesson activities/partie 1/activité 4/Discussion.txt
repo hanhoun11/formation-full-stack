@@ -1,0 +1,18 @@
+Discussion :
+
+1. Quelle est la responsabilité de chaque module ?
+contactService.js : Gère la logique métier (ajouter et lister les contacts)
+utils/format.js : Formate l’affichage des contacts
+app.js : Point d’entrée, coordonne le tout
+
+2. Pourquoi séparer le formatage, la logique et le point d’entrée ?
+Cela rend le code plus clair et organisé 
+Chaque fichier a une responsabilité unique 
+On peut modifier une partie sans casser les autres 
+Il devient plus facile de tester les fonctions individuellement.
+
+3. Comment cela facilitera la maintenance à long terme ?
+On peut ajouter de nouvelles fonctionnalités sans toucher au formatage 
+On peut changer la présentation (format du contact) sans toucher à la logique 
+On peut réutiliser les modules ailleurs (dans une app web ou mobile) 
+En cas de bug, on sait exactement où chercher.
